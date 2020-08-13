@@ -1,4 +1,6 @@
-# modified from dataviz.andrewheiss.com
+# General
+
+The structure of this website was modified from dataviz.andrewheiss.com
 
 This repository contains the code for generating [datascience.mikehallett.science](https://datascience.mikehallett.science).
 

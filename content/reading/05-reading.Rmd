@@ -11,9 +11,11 @@ csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 
 - [Chapter 5 for Data Science: Basics](https://r4ds.had.co.nz/)
 
+- We will revisit our breast cancer transcriptomic dataset ${\tt brca\_small}$.
+
 # Recommended Reading
 
-
+- If you didn't have time previously to explore TCGA, perhaps take a look at the [project](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga) now.
 
 
 # Deeper insight
@@ -23,5 +25,5 @@ csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 
 # Action items  
 
-- You might investigate the code in Project L05 at RStudio Cloud and explore the Tara Oceans dataset.
+- You might investigate the code in Project L05 at RStudio Cloud. 
 

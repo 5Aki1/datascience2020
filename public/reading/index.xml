@@ -58,7 +58,9 @@ Required  Please read the Overview for the course.Required reading represents fu
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/reading/05-reading/</guid>
-      <description>  Required  Chapter 5 for Data Science: Basics  Recommended Reading Deeper insight  dplyr tutorial Datacamp’s dpylyr tutorial  Action items  You might investigate the code in Project L05 at RStudio Cloud and explore the Tara Oceans dataset.  </description>
+      <description>  Required  Chapter 5 for Data Science: Basics
+ We will revisit our breast cancer transcriptomic dataset \({\tt brca\_small}\).
+  Recommended Reading  If you didn’t have time previously to explore TCGA, perhaps take a look at the project now.  Deeper insight  dplyr tutorial Datacamp’s dpylyr tutorial  Action items  You might investigate the code in Project L05 at RStudio Cloud.  </description>
     </item>
     
     <item>

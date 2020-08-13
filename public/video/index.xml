@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Videos on Bioinformatics</title>
+    <link>/video/</link>
+    <description>Recent content in Videos on Bioinformatics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction and orientation</title>
+      <link>/video/00-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/00-video/</guid>
+      <description>Lecture 00 at Youtube</description>
+    </item>
+    
+    <item>
+      <title>IT for the Life Sciences</title>
+      <link>/video/01-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/01-video/</guid>
+      <description>Lecture 01 at Youtube</description>
+    </item>
+    
+    <item>
+      <title>Modern Computing Paradigms</title>
+      <link>/video/02-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/02-video/</guid>
+      <description>Lecture 02 Part 1 at Youtube: Computing Paradigms
+Lecture 02 Part 2 at Youtube (RStudio Cloud)</description>
+    </item>
+    
+    <item>
+      <title>Representing biological data in R</title>
+      <link>/video/04-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/04-video/</guid>
+      <description>Lecture 04 at Youtube: Representing data in R</description>
+    </item>
+    
+    <item>
+      <title>Transformations of breast cancer transcriptional cohorts</title>
+      <link>/video/05-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/05-video/</guid>
+      <description>Lecture 04 at Youtube: Transforming breast cancer transcriptional cohorts</description>
+    </item>
+    
+    <item>
+      <title>Visualizaing Breast Cancer Transcriptomes</title>
+      <link>/video/03-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/03-video/</guid>
+      <description>Lecture 03 at Youtube: Breast Cancer Transcriptomes</description>
+    </item>
+    
+  </channel>
+</rss>

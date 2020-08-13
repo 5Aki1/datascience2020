@@ -1,0 +1,23 @@
+---
+title: "Transformations of breast cancer transcriptional cohorts"
+date: "2020-07-20"
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+---
+
+# Slides
+
+- [View lectures slide in your browser (html)](/slides/05-slides.html)
+
+
+# Action Items
+
+- Assignment #1 due this week.
+
+
+# Points of reflection
+
+
+

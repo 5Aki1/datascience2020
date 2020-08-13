@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classes on Bioinformatics</title>
+    <link>/class/</link>
+    <description>Recent content in Classes on Bioinformatics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/class/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Information Technology for Life Science</title>
+      <link>/class/01-class/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/01-class/</guid>
+      <description>Slides View lectures slide in your browser (html)
+Action Items  Note that Assignment 1 is made available today.
+ Please make sure you have sent us your gmail account at email
+  Points of reflection  Your devices contain an incredible amount of personal information. The consequences from misuse by malicious individuals for some of this information are quite easy to see (eg credit card numbers). How else can data be stolen from your machine and used in a malcious fashion?</description>
+    </item>
+    
+    <item>
+      <title>Introduction and orientation</title>
+      <link>/class/00-class/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/00-class/</guid>
+      <description>Slides View lectures slide in your browser (html)They will also be made available to you in RStudio Cloud for direct viewing.
+
+Action items  If you haven’t doing the reading, please do so and address the action items at the bottom. This primarily involves sending us your gmail account and establishing accounts with some of the software we will use.
+ Prepare for Lecture 02 (readings + videos)</description>
+    </item>
+    
+    <item>
+      <title>Modern Computing Paradigms</title>
+      <link>/class/02-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/02-class/</guid>
+      <description>Contents  Slides Action Items Points of reflection   Slides  View lectures slide in your browser (html)  Action Items  Assignment #1 Try to get up and running with RStudio Cloud.  Points of reflection  The concept of computation has been around for a long time. A lot of activity during the Industrial Revolution … and then an explosion circa WWII Three fundamental properties of computation.</description>
+    </item>
+    
+    <item>
+      <title>Representing and Manipulating Data in R</title>
+      <link>/class/04-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/04-class/</guid>
+      <description>  Contents  Slides Action Items Points of reflection   Slides  View lectures slide in your browser (html)  Action Items  Assignment #1 Copy (and save permanently) Project 4 in RStudio Cloud. Try to work you way through the examples. Try some of the exercises in Chapter 4 to increase your fluency inthe basics of R.  Points of reflection </description>
+    </item>
+    
+    <item>
+      <title>Transformations of breast cancer transcriptional cohorts</title>
+      <link>/class/05-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/05-class/</guid>
+      <description>  Contents  Slides Action Items Points of reflection   Slides  View lectures slide in your browser (html)  Action Items  Assignment #1 due this week.  Points of reflection </description>
+    </item>
+    
+    <item>
+      <title>Visualizing breast cancer transcriptomes</title>
+      <link>/class/03-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/03-class/</guid>
+      <description>Contents  Slides Action Items Points of reflection   Slides  View lectures slide in your browser (html)  Action Items  Assignment #1 Copy (and save permanently) Project 3 in RStudio Cloud. Try to work you way through the examples. Try some of the exercises in Chapter 3 to increase your fluency in \({\tt ggplot}\). Try changing the colour (using hex notation; this is the most flexible approach), shape or size of the scatter plots created above.</description>
+    </item>
+    
+  </channel>
+</rss>

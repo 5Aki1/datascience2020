@@ -1,0 +1,4 @@
+---
+title: "Truth, Beauty, and Data"
+date: "2017-09-05"
+---

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readings on Bioinformatics</title>
+    <link>/reading/</link>
+    <description>Recent content in Readings on Bioinformatics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/reading/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction and orientation</title>
+      <link>/reading/00-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/00-reading/</guid>
+      <description>This is the first class, so allow me to run through how the Readings pages work.
+Both Readings and Video should be completed before the actual lecture. The lecture itself is intended for you to ask questions, for me to give out small quizzes/puzzles/questions (for grades), and for me to provide deeper insight into the material.
+Required  Please read the Overview for the course.Required reading represents fundamental material that you are expected to master.</description>
+    </item>
+    
+    <item>
+      <title>Introduction and orientation</title>
+      <link>/reading/01-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/01-reading/</guid>
+      <description>Required  Please read the Resources for the course.
+ These are interesting short articles on different approaches towards keeping lab notebooks, and the pros and cons of electronic laboratory notebooks (ELNs) versus traditional paper notebooks. E Pain (2019) Science and R Kwok (2018) Nature.
+  Recommended  Read a little bit about RStudio here and specifically RStudio Cloud
+ If you have difficulties with Google Drive, this seems like a reasonable tutorial.</description>
+    </item>
+    
+    <item>
+      <title>IT for the Life Sciences</title>
+      <link>/reading/02-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/02-reading/</guid>
+      <description>Required  Chapter 2 R for Data Science: Introduction (1 page long)  Recommended  Try to understand  Antikythera Mechanism Napier’s Bones and Jacquard Loom The Sun Shadow Board   Fun Reading  Computers over Time Computer Science: some of its flavours:  Algorithms Cryptography Computational Complexity Databases Compilers  Read on-line resources with some passing familarity with computer developments in the 20th century. The Turing Award Suggested readings: The Enigma, or at least the movie The Imitation Game War Games, the best movie ever.</description>
+    </item>
+    
+    <item>
+      <title>Representing and Manipulating Data in R</title>
+      <link>/reading/04-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/04-reading/</guid>
+      <description>  Required  Chapter 4 for Data Science: Basics  Deeper insight  Introduction to R (DataCamp) Datacamp has some excellent short courses in R.  Action items  You might investigate the code in Project L04 at RStudio Cloud.  </description>
+    </item>
+    
+    <item>
+      <title>Transformations of breast cancer transcriptional cohorts</title>
+      <link>/reading/05-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/05-reading/</guid>
+      <description>  Required  Chapter 5 for Data Science: Basics  Recommended Reading Deeper insight  dplyr tutorial Datacamp’s dpylyr tutorial  Action items  You might investigate the code in Project L05 at RStudio Cloud and explore the Tara Oceans dataset.  </description>
+    </item>
+    
+    <item>
+      <title>Visualizing breast cancer transcriptomes</title>
+      <link>/reading/03-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/03-reading/</guid>
+      <description>Required  Chapter 3 R for Data Science: Introduction
+ Sequencing by Synthesis
+ Sequencing by Synthesis (more background including DNA chemistry)
+  Recommended  Transcriptomics Excellent set of slides describing sequencing technologies and trends. Includes nice grpahics about Illumina technology. [From D Beiting, UPenn]
+ History of Sequencing and Illumina’s Sequencing by Synthesis[From D Beiting, UPenn]
+  Deeper insight  DIY Transcriptomics A nice course covering the central topics of transcriptomic bioinformatic analysis.</description>
+    </item>
+    
+  </channel>
+</rss>

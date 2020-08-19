@@ -6,5 +6,5 @@ bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 ---
 
-[Lecture 01 at Youtube](https://youtu.be/qzLpDIWS0nw) 
+[Lecture 01 at Youtube](https://youtu.be/_w7u287vF9s) 
 

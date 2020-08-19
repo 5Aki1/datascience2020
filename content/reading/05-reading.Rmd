@@ -11,7 +11,8 @@ csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 
 - [Chapter 5 for Data Science: Basics](https://r4ds.had.co.nz/)
 
-- We will revisit our breast cancer transcriptomic dataset ${\tt brca\_small}$.
+- [Simpson's Paradox](https://www.youtube.com/watch?v=ebEkn-BiW5k)
+
 
 # Recommended Reading
 

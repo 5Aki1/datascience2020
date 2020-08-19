@@ -36,6 +36,26 @@ Action items  If you haven’t doing the reading, please do so and address the a
     </item>
     
     <item>
+      <title>Exploratory data analysis of breast cancer transcriptomes</title>
+      <link>/reading/06-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/06-reading/</guid>
+      <description>Required  Chapter 7 for Data Science: Basics  Recommended Reading  magrittr package in R for pipes.
+ Chapter 8 for Data Science: Projects is very short and we have covered most of this material throughout the lecture. It might be of interest to you.
+  Deeper insight  DataCamp tutorial on pipes  Action items  You might investigate the code in Project L06 at RStudio Cloud.</description>
+    </item>
+    
+    <item>
+      <title>Exploratory data analysis of breast cancer transcriptomes</title>
+      <link>/video/06-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/06-video/</guid>
+      <description>Lecture 06 at Youtube: Exploratory data analysis of breast cancer transcriptomes</description>
+    </item>
+    
+    <item>
       <title>Introduction and orientation</title>
       <link>/reading/00-reading/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
@@ -120,7 +140,7 @@ Lecture 02 Part 2 at Youtube (RStudio Cloud)</description>
       
       <guid>/reading/05-reading/</guid>
       <description>  Required  Chapter 5 for Data Science: Basics
- We will revisit our breast cancer transcriptomic dataset \({\tt brca\_small}\).
+ Simpson’s Paradox
   Recommended Reading  If you didn’t have time previously to explore TCGA, perhaps take a look at the project now.  Deeper insight  dplyr tutorial Datacamp’s dpylyr tutorial  Action items  You might investigate the code in Project L05 at RStudio Cloud.  </description>
     </item>
     
@@ -157,6 +177,17 @@ Lecture 02 Part 2 at Youtube (RStudio Cloud)</description>
     </item>
     
     <item>
+      <title>Exploratory data analysis of breast cancer transcriptomes</title>
+      <link>/class/06-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/06-class/</guid>
+      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Today’s material is the final material included in Midterm #1.
+ Assignment #2 will be now available. I would look that over.
+  Challenge Points of Reflection  Many of us are familiar with representing data in spreadsheets (eg Excel of Google Sheets). Describe the fundamental differences between the two dimensional table of spreadsheets and the tibble.</description>
+    </item>
+    
+    <item>
       <title>Modern Computing Paradigms</title>
       <link>/class/02-class/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
@@ -180,7 +211,8 @@ Lecture 02 Part 2 at Youtube (RStudio Cloud)</description>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/05-class/</guid>
-      <description>  Contents  Slides Action Items Points of reflection   Slides  View lectures slide in your browser (html)  Action Items  Assignment #1 due this week.  Points of reflection </description>
+      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Assignment #1 due this week.  Challenge  The last \(50\) variables give expression values for \(50\) genes. When I was wrangling this data into a \({\tt tibble}\), I just used teh gene name.
+ Arguably, it would have been better to us variables names of the form \({\tt Gene.</description>
     </item>
     
     <item>
@@ -281,7 +313,7 @@ x@gmail.com</description>
       
       <guid>/syllabus/</guid>
       <description>  Readings and assignments should be completed before each class session. Assignments, and instructions for submitting assignments, can be found at at the Assignments page.
-  Date Number Topic Reading Video Slides+ Assignment Solutions     Sept 8 L0 Introduction and orientation        Sept 10 L1 Information technology for managing science        Sept 15 L2 Modern computing paradigms        Sept 17 L3 Visualizing breast cancer transcriptomes        Sept 22 L4 Representing &amp;amp; manipulating data        Sept 24 L5 Transformations of breast cancer transcriptomes        Sept 28 -- Assignment 1 due        Sept 29 L6 Exploring the tree of life        Oct 1 L7 The NCBI: a rich resource for the life sciences        Oct 6 L8 Hunting for correlations in marine microbiomes        Oct 8 -- Midterm 1 (1hr; open book; Zoom)        Oct 13 L9 Wrangling with cancer gene expresion and clinical data        Oct 15 L10 Identifying transcription factor binding sites        Oct 19 -- Assignment 2 due        Oct 20 L11 Organizing the Tara Ocean&amp;rsquo;s data        Oct 22 L12 Discovering patterns in gene expression data        Oct 22 -- Project outline due for genomics diploma and grad students (1 page)        Oct 27 L13 Exploring the evolutionary relationships between cyanobacteria        Oct 29 -- Midterm 2 (1hr, open book, Zoom)        Nov 3 L14 Discovering new cell types from single cell expression data        Nov 5 L15 Predicting breast cancer patient outcome from expression data        Nov 9 -- Assignment 3 due        Nov 10 L16 Modelling cancer as a stochastic process        Nov 12 L17 Gene finding        Nov 17 L18 Genome annotation        Nov 19 L19 Protein domains and structure        Nov 24 L20 Sequence alignment        Nov 26 L21 Deep learning approach to identifying cell type in human tissue        Nov 27 -- Assignment 4 due        Dec 1 L22 Deep learning approach to measuring the profliferative index of a cancer cell with microscopy        Dec 3 L23 Reproducibility in life science research        Dec 10 -- Project due        Dec TBA -- Final (2hr, take home, open book)         </description>
+  Date Number Topic Reading Video Slides+ Assignment Solutions     Sept 8 L0 Introduction and orientation        Sept 10 L1 Information technology for managing science        Sept 15 L2 Modern computing paradigms        Sept 17 L3 Visualizing breast cancer transcriptomes        Sept 22 L4 Representing &amp;amp; manipulating data        Sept 24 L5 Transformations of breast cancer transcriptomes        Sept 28 -- Assignment 1 due        Sept 29 L6 Exploratory data analysis of breast cancer transcriptomes        Oct 1 L7 The NCBI: a rich resource for the life sciences        Oct 6 L8 How to wrangle with marine microbes        Oct 8 -- Midterm 1 (1hr; open book; Zoom)        Oct 13 L9 Organzing the Tara Ocean&amp;rsquo;s data        Oct 15 L10 Exploring the evolutionary relationships between cyanobacteria        Oct 19 -- Assignment 2 due        Oct 20 L11 Genomic structure of fungal organisms        Oct 22 L12 Exporing regulation in Candida albicans        Oct 22 -- Project outline due for genomics diploma and grad students (1 page)        Oct 27 L13 Genome annotations in C albicans: proteins, domains and structure        Oct 29 -- Midterm 2 (1hr, open book, Zoom)        Nov 3 L14 Modelling cancer as a stochastic process        Nov 5 L15 Gene finding with Hidden Markov Models        Nov 9 -- Assignment 3 due        Nov 10 L16 Sequence alignment and models of evolution        Nov 12 L17 Exploring the tree of life        Nov 17 L18 Discovering subtypes in breast cancer: unsupervised analysis        Nov 19 L19 Predicting breast cancer patient outcome from expression data: supervised analysis        Nov 24 L20 Identifying new cell types from single cell expression data and deep learning        Nov 26 L21 Deep learning approach to identifying cell type in human tissue        Nov 27 -- Assignment 4 due        Dec 1 L22 Deep learning: profliferative index of a cancer cell with microscopy        Dec 3 L23 Reproducibility in life science research        Dec 10 -- Project due        Dec TBA -- Final (2hr, take home, open book)         </description>
     </item>
     
   </channel>

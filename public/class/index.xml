@@ -36,6 +36,17 @@ Action items  If you haven’t doing the reading, please do so and address the a
     </item>
     
     <item>
+      <title>Exploratory data analysis of breast cancer transcriptomes</title>
+      <link>/class/06-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/06-class/</guid>
+      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Today’s material is the final material included in Midterm #1.
+ Assignment #2 will be now available. I would look that over.
+  Challenge Points of Reflection  Many of us are familiar with representing data in spreadsheets (eg Excel of Google Sheets). Describe the fundamental differences between the two dimensional table of spreadsheets and the tibble.</description>
+    </item>
+    
+    <item>
       <title>Modern Computing Paradigms</title>
       <link>/class/02-class/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
@@ -59,7 +70,8 @@ Action items  If you haven’t doing the reading, please do so and address the a
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/05-class/</guid>
-      <description>  Contents  Slides Action Items Points of reflection   Slides  View lectures slide in your browser (html)  Action Items  Assignment #1 due this week.  Points of reflection </description>
+      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Assignment #1 due this week.  Challenge  The last \(50\) variables give expression values for \(50\) genes. When I was wrangling this data into a \({\tt tibble}\), I just used teh gene name.
+ Arguably, it would have been better to us variables names of the form \({\tt Gene.</description>
     </item>
     
     <item>

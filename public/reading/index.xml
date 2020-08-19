@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Exploratory data analysis of breast cancer transcriptomes</title>
+      <link>/reading/06-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/06-reading/</guid>
+      <description>Required  Chapter 7 for Data Science: Basics  Recommended Reading  magrittr package in R for pipes.
+ Chapter 8 for Data Science: Projects is very short and we have covered most of this material throughout the lecture. It might be of interest to you.
+  Deeper insight  DataCamp tutorial on pipes  Action items  You might investigate the code in Project L06 at RStudio Cloud.</description>
+    </item>
+    
+    <item>
       <title>Introduction and orientation</title>
       <link>/reading/00-reading/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
@@ -59,7 +70,7 @@ Required  Please read the Overview for the course.Required reading represents fu
       
       <guid>/reading/05-reading/</guid>
       <description>  Required  Chapter 5 for Data Science: Basics
- We will revisit our breast cancer transcriptomic dataset \({\tt brca\_small}\).
+ Simpson’s Paradox
   Recommended Reading  If you didn’t have time previously to explore TCGA, perhaps take a look at the project now.  Deeper insight  dplyr tutorial Datacamp’s dpylyr tutorial  Action items  You might investigate the code in Project L05 at RStudio Cloud.  </description>
     </item>
     

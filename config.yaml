@@ -61,11 +61,11 @@ params:
     contactDetails: Slack
     rstudiocloud: "private"
   labs:
-    TA: TBA
-    email: x@gmail.com
+    TA: Aki Kirbizakis
+    email: e.kirbizakis@gmail.com
     location:  "https://concordia-ca.zoom.us/s/8992285958#success"
     labtime: "Tu 10:15-11:30"
-    officehours: "Office TBA" 
+    officehours: "TBA" 
   university: 
     name: Concordia University
     url: "https://www.concordia.ca"

@@ -119,11 +119,11 @@ Ok so how does this work in our covid-19 reality? Here we go.
 1. The video for each lecture is availalbe on <i class="fa fa-youtube" aria-hidden="true"></i> <a href= "https://www.youtube.com/channel/UCx3QJc2DZSo-mny8UERmywg?view_as=subscriber"> our YouTube channel</a>.
 You should watch the  video before the actual lecture.
 
-2. We have a <i class="fa fa-slack" aria-hidden="true"></i> <a href="https://biol480-18-concordia.slack.com"> Slack</a> workspace and you can ask questions in the #biol480 channel. You can get access to Slack by sending the TA your gmail account. Slack is great for asking questions. 
+2. We have a <i class="fa fa-slack" aria-hidden="true"></i> <a href="https://biol480-18-concordia.slack.com"> Slack</a> workspace and you can ask questions in the #biol480 channel. You can get access to Slack by sending  your gmail account here: [biol480.concordia](mailto:biol480.concordia@gmail.com). Slack is great for asking questions. 
 
 3. The lectures   are via <i class="fa fa-video-camera" aria-hidden="true"></i><a href="https://concordia-ca.zoom.us/s/8992285958#success"> Zoom</a>. The Zoom password is in the Slack channel. The lectures  will be used to discuss the material  you have read previously (see 1 above). Also, sometimes (8 in total) there will be small quizzess, or I will give a small puzzle, or ask for your opinion on a subject relevant to the material covered to date. These will last ~10 minutes. Otherwise, I will answer questions and provide more depth on specific aspects of the slides.
 
-4. The labs  are also via Zoom. The TA will be happy to answer questions and assist you with the assignments.
+4. The labs  are also via Zoom. The TA (Aki) will be happy to answer questions and assist you with the assignments.
 
 5. Office hours are via Slack. I am actually accessible almost always via Slack and find this a more efficient way to communicate. Slack does have video conferncing too that is very easy to use, and is more suitable for one on one discussion. 
 
@@ -175,7 +175,7 @@ Please drop me an [email](mailto:hallett.mike.t@gmail.com).
 # Action items 
 Once you have read this entire overview, please email us at the course gmail  [biol480.concordia](mailto:biol480.concordia@gmail.com)  with your gmail account, last name, first name and student ID.
 Make sure it is easy for us to associate the name of your gmail account with your real name (if the username of your gmail account is e.g. "kingofeverything", it might be hard for us to guess who this is, unfortunately.
-For security reasons and for organizational simplicity for the TA, 
+For security reasons and for organizational simplicity for  TA Aki, 
 we would ask that you send a Google mail [gmail](https://mail.google.ca)  address.
 
 

@@ -16,7 +16,6 @@ output:
 
 - Today's material is the final material included in  Midterm #1. 
 
-- Assignment #2 will be now available. I would look that over.
 
 
 

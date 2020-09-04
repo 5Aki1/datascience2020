@@ -36,6 +36,27 @@ Action items  If you haven’t doing the reading, please do so and address the a
     </item>
     
     <item>
+      <title>Bioinformatics repositories: the NCBI and other tools</title>
+      <link>/reading/07-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/07-reading/</guid>
+      <description>Required  The NCBI Handbook Please read short chapter on Genome (page 89-94).
+ Also please read the definition of GenBank (page 381). This link gives a bit more information.
+ Please read The Entrez Search and Retrieval System (page 459-44). Then try it out using your favourite gene (choose an organism and gene at random otherwise).
+ Finally please read the short section on the NCBI Protein database (page 385-6)</description>
+    </item>
+    
+    <item>
+      <title>Bioinformatics repositories: the NCBI and other tools</title>
+      <link>/video/07-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/07-video/</guid>
+      <description>Lecture 07 at Youtube</description>
+    </item>
+    
+    <item>
       <title>Exploratory data analysis of breast cancer transcriptomes</title>
       <link>/reading/06-reading/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
@@ -177,14 +198,23 @@ Lecture 02 Part 2 at Youtube (RStudio Cloud)</description>
     </item>
     
     <item>
+      <title>Bioinformatics repositories: the NCBI and other tools</title>
+      <link>/class/07-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/07-class/</guid>
+      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Assignment #2 will be now available. I would look that over.  Points of Reflection  What are the pros and cons with simply making your data available through a self-made website?
+ Similarly, what are the pros and cons with an approach of data release at the journal website?</description>
+    </item>
+    
+    <item>
       <title>Exploratory data analysis of breast cancer transcriptomes</title>
       <link>/class/06-class/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/06-class/</guid>
-      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Today’s material is the final material included in Midterm #1.
- Assignment #2 will be now available. I would look that over.
-  Challenge Points of Reflection  Many of us are familiar with representing data in spreadsheets (eg Excel of Google Sheets). Describe the fundamental differences between the two dimensional table of spreadsheets and the tibble.</description>
+      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Today’s material is the final material included in Midterm #1.  Challenge Points of Reflection  Many of us are familiar with representing data in spreadsheets (eg Excel of Google Sheets). Describe the fundamental differences between the two dimensional table of spreadsheets and the tibble.
+ With respect to the discussion at the beginning of Chapter 6 in the textbook, what are some fundamental differences between an academic course environment where you are given a dataset and specific questions to complete on an assignment versus data science in research or idustrial settings?</description>
     </item>
     
     <item>

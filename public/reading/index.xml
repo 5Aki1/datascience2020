@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Bioinformatics repositories: the NCBI and other tools</title>
+      <link>/reading/07-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/07-reading/</guid>
+      <description>Required  The NCBI Handbook Please read short chapter on Genome (page 89-94).
+ Also please read the definition of GenBank (page 381). This link gives a bit more information.
+ Please read The Entrez Search and Retrieval System (page 459-44). Then try it out using your favourite gene (choose an organism and gene at random otherwise).
+ Finally please read the short section on the NCBI Protein database (page 385-6)</description>
+    </item>
+    
+    <item>
       <title>Exploratory data analysis of breast cancer transcriptomes</title>
       <link>/reading/06-reading/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>

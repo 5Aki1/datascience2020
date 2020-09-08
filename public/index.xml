@@ -105,7 +105,8 @@ Required  Please read the Overview for the course.Required reading represents fu
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/video/00-video/</guid>
-      <description>Lecture 00 at Youtube</description>
+      <description>Lecture 00 at Youtube
+Lecture 00 at my server</description>
     </item>
     
     <item>
@@ -255,12 +256,12 @@ Lecture 02 Part 2 at Youtube (RStudio Cloud)</description>
     </item>
     
     <item>
-      <title>Truth, Beauty, and Data</title>
+      <title>Assignment 1</title>
       <link>/assignment/01-assignment/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/assignment/01-assignment/</guid>
-      <description>  </description>
+      <description>Question 1 [8 points] You obtained a \({\tt gmail}\) account for this course. With this account, you can also initiate your Google Drive workspace. (i) Does Google have the right to look at your emails, documents, drawings or other objects? (ii) Does Google have the right to use information? Can it collect meta-data about your informatinon. (iii) How can you turn on or off the geographical tracking mechanism associated with your account.</description>
     </item>
     
     <item>

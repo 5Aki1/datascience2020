@@ -8,3 +8,4 @@ csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 
 [Lecture 00 at Youtube](https://youtu.be/Md7QhHd1PHc) 
 
+[Lecture 00 at my server](http://csfg-algonquin.concordia.ca/~hallett/Discussions/D00-Discussion.mp4)

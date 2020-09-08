@@ -676,17 +676,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 <section id="an-r-program-for-the-biggest-number-problem" class="slide level2">
 <h2>An R program for the biggest number problem</h2>
-<pre><code>## findmax &lt;-</code></pre>
-<pre><code>## function(L) {
-##    if (length(L)==0) return(-1)
-##    if (length(L)==1) return(L[1])
-##    current_largest &lt;- L[1]
-##    
-##    for (i in 2:length(L)) {
-##      if (L[i] &gt; current_largest) current_largest &lt;- L[i]
-##    }
-##    return(current_largest)
-##  }</code></pre>
+<p>findmax &lt;- function(L) { if (length(L)==0) return(-1) if (length(L)==1) return(L[1]) current_largest &lt;- L[1]</p>
+<p>for (i in 2:length(L)) { if (L[i] &gt; current_largest) current_largest &lt;- L[i] } return(current_largest) }</p>
 </section>
 <section id="is-this-a-computing-device" class="slide level2">
 <h2>Is this a computing device?</h2>

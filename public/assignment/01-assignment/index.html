@@ -131,26 +131,137 @@
     <article class="group">
     <h1>Assignment 1</h1>
 
-    
-    <p class="page-date">Due by <strong>11:59 PM</strong> on Sunday, December 31, 0000</p>
-    
+   
     
     
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #ffffff;
+    color: #a0a0a0;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-left: 4px; }
+div.sourceCode
+  { color: #1f1c1b; background-color: #ffffff; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #1f1c1b; } /* Normal */
+code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
+code span.an { color: #ca60ca; } /* Annotation */
+code span.at { color: #0057ae; } /* Attribute */
+code span.bn { color: #b08000; } /* BaseN */
+code span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
+code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #924c9d; } /* Char */
+code span.cn { color: #aa5500; } /* Constant */
+code span.co { color: #898887; } /* Comment */
+code span.cv { color: #0095ff; } /* CommentVar */
+code span.do { color: #607880; } /* Documentation */
+code span.dt { color: #0057ae; } /* DataType */
+code span.dv { color: #b08000; } /* DecVal */
+code span.er { color: #bf0303; text-decoration: underline; } /* Error */
+code span.ex { color: #0095ff; font-weight: bold; } /* Extension */
+code span.fl { color: #b08000; } /* Float */
+code span.fu { color: #644a9b; } /* Function */
+code span.im { color: #ff5500; } /* Import */
+code span.in { color: #b08000; } /* Information */
+code span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
+code span.op { color: #1f1c1b; } /* Operator */
+code span.ot { color: #006e28; } /* Other */
+code span.pp { color: #006e28; } /* Preprocessor */
+code span.re { color: #0057ae; background-color: #e0e9f8; } /* RegionMarker */
+code span.sc { color: #3daee9; } /* SpecialChar */
+code span.ss { color: #ff5500; } /* SpecialString */
+code span.st { color: #bf0303; } /* String */
+code span.va { color: #0057ae; } /* Variable */
+code span.vs { color: #bf0303; } /* VerbatimString */
+code span.wa { color: #bf0303; } /* Warning */
+</style>
 
 
-<p><em>Question 1 [8 points]</em> You obtained a <span class="math inline">\({\tt gmail}\)</span> account for this course. With this account, you can also initiate your Google Drive workspace. (i) Does Google have the right to look at your emails, documents, drawings or other objects? (ii) Does Google have the right to use information? Can it collect meta-data about your informatinon. (iii) How can you turn on or off the geographical tracking mechanism associated with your account. (iv) Are you satisfied with the level of security and user agreement with Google? (Answer in ~10 sentences please.)</p>
-<p><em>Question 2 [4 points]</em> Does cloud computing reduce the overall cost for computers and computation for the “average” person? If so, how? Make reference to the definitions and components of cloud and traditional computing from the lecture notes.</p>
-<p><em>Question 3 [2 points]</em> Give an example of how concepts from computation drifted into the life sciences?</p>
-<p><em>Question 4 [4 points]</em> Argue for and against each of the following items as a computing device (make references to the 3 fundamental properties of modern computers).</p>
+<p>Please note that due dates can be found in the <a href="/Syllabus">Syllabus</a>; submission instructions can be found on the <a href="/Assignments">Assignment Instructions</a> page. In this assignment, you can submit a Google Doc (or other text editor, pictures, etc.) but also your <span class="math inline">\({\tt R}\)</span> code via Google Drive.
+Aki will go over the submission process in the lab.</p>
+<p><span class="math inline">\({\bf 50}\)</span> total marks.</p>
+<p><strong>Question 1 [7 points]</strong> You obtained a <span class="math inline">\({\tt gmail}\)</span> account for this course. With this account, you can also initiate your Google Drive workspace. (i) Does Google have the right to look at your emails, documents, drawings or other objects? (ii) Does Google have the right to use this information? What is meta-data? Can it collect meta-data about your information? (iii) How can you turn on or off the geographical tracking mechanism associated with your account? (iv) Are you satisfied with the level of security and user agreement with Google? (Answer in ~10 sentences please.)</p>
+<p><strong>Question 2 [3 points]</strong> Does cloud computing reduce the overall cost for computers and computation for the “average” person? If so, how? Make reference to the definitions and components of cloud and traditional computing from the lecture notes. 4 or 5 sentences.</p>
+<p><strong>Question 3 [3 points]</strong> Give an example of how concepts from computation drifted into the life sciences? 3 or 4 sentences.</p>
+<p><strong>Question 4 [3 points]</strong> Argue for and against each of the following items as a computing device (make references to the 3 fundamental properties of modern computers).</p>
 <ol style="list-style-type: decimal">
 <li>compass</li>
-<li>old style electronic watch</li>
 <li>a car</li>
 <li>an assembly line to make cars at the Ford Inc. factory</li>
 </ol>
-<p><em>Question 5 [5 points]</em>
-What privacy issues might arise in -omic studies? Are the issues of privacy more or less acute in a transcriptome-based study (as we say in class) than say a genomic DNA-based study ? Remember that both studies are based on sequencing RNA and DNA of samples</p>
+<p><strong>Question 5 [4 points]</strong>
+What privacy issues might arise in -omic studies? Are the issues of privacy more or less acute in a transcriptome-based study (as we saw in class) than say a genomic DNA-based study (sequencing the genome of individuals)? Remember that both studies are based on sequencing RNA and DNA of samples</p>
+<p><strong>Question 6 [4 points]</strong>
+Create a <span class="math inline">\({\tt R}\)</span> script under <span class="math inline">\({\tt File/NewFile}\)</span>.
+Write R code to load the <span class="math inline">\({\tt tidyverse}\)</span> library and the <span class="math inline">\({\tt small\_brca}\)</span> dataset.
+Note that in the course slides, I load the dataset from my directory specific to my computer.
+However, if you look in the R code in the <span class="math inline">\({\tt src}\)</span> on RStudio Cloud (Project 03), you will find the correct path for you.</p>
+<p>Make a comment that this is Question 6, Assignment 1 before your code. Find the function in <span class="math inline">\({\tt R}\)</span> that reports the data and the version of <span class="math inline">\({\tt R}\)</span> that you are using. Put the code in your file.</p>
+<p>Save your R code in your <span class="math inline">\({\tt src}\)</span> directory of the project and name the file <span class="math inline">\({\tt lastname\_assignment1.R}\)</span>. Take a screenshot with your file open (top left), the Environment list showing (top right), the code executed in your R session (bottom left), and the contents of the <span class="math inline">\({\tt src}\)</span> folder (bottom right). Congratulations, you are now an R programmer.</p>
+<p><strong>For Questions 7-10 below.</strong> Put a comment in your file that states what question you are working on and put your code below it. For any pictures (eg the plot that your code generates) and text, put them into a text document (eg using Google Docs) stating what question you are working on.</p>
+<p><strong>Question 7 [5 points]</strong></p>
+<p>Recall from the lecture that <span class="math inline">\({\tt HER2}\)</span> is an important protein in some subtypes of breast cancer, and remmeber that <span class="math inline">\({\tt ERBB2}\)</span> is the official name for <span class="math inline">\({\tt HER2}\)</span>.</p>
+<p>The variable <span class="math inline">\({\tt ERBB2}\)</span> in our tibble corresponds to estimates of the number of transcripts present in each sample (row). This is obtained using RNA-seq technologies as discussed in the lecture.
+Clinically, <span class="math inline">\({\tt HER2}\)</span> is not measured using transcriptomics. Typically the
+copy number of <span class="math inline">\({\tt HER2}\)</span> is measured at at the DNA level. This is because we believe that
+<span class="math inline">\({\tt HER2}\)</span> over-expression at the transcript and protein levels are due to a amplification of the genomic region tha contains <span class="math inline">\({\tt HER2}\)</span>. In the clinic, Fluorescence In Situ Hybridization <a href="https://www.genome.gov/about-genomics/fact-sheets/Fluorescence-In-Situ-Hybridization">(FISH)</a> is used.</p>
+<p>The variable <span class="math inline">\({\tt her2\_fish\_status}\)</span> gives exactly this, although it is not available for many observations (rows/patient samples).</p>
+<p>Using ggplot, making the following scatter plot. Make a comment in your file from Question 6 and make a comment that this is Question 7. Put your R code there.</p>
+<p><img src="/assignment/01-assignment_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" />
+Comment or interpret the graph in 1 or 2 sentences: does it make sense? is it what you expected? are there issues? etc.</p>
+<p><strong>Question 8 [5 points]</strong></p>
+<p>It is a little bit hard to see the status of <span class="math inline">\({\tt tumor}\)</span> and <span class="math inline">\({\tt her2\_fish\_status}\)</span> in the figure of Question 7 because so many points are bunched up around the origin of the graph.
+Using online resources, find out how to draw a pie chart for each of these variables.
+Does this add any insight to the plot from Question 7?</p>
+<p><strong>Question 9 [5 points]</strong>
+Similar to Question 7, the variable <span class="math inline">\({\tt ESR1}\)</span> corresponds to transcript levels of the estrogen receptor. In the clinic, the estrogen receptor protein is measured by <a href="https://www.proteinatlas.org/learn/method/immunohistochemistry">ImmunoHistoChemistry</a>.</p>
+<p>The variable <span class="math inline">\({\tt er\_status\_by\_ihc}\)</span> has this value. Create a scatterplot of <span class="math inline">\({\tt ESR1}\)</span> transcript versus <span class="math inline">\({\tt ERBB2}\)</span> transcript, but use colors, shape, size or other options to also display both the <span class="math inline">\({\tt er\_status\_by\_ihc}\)</span> and <span class="math inline">\({\tt her2\_fish\_status}\)</span> status.
+Interpret this graph in 1 or 2 sentences.</p>
+<p><strong>Question 10 [5 points]</strong>
+Create a barplot (like Slide 28 of L03) that explores the relationship between <span class="math inline">\({\tt ajcc\_pathologic\_tumor\_stage}\)</span> and <span class="math inline">\({\tt er\_status\_by\_ihc}\)</span>. Comment (interpret) in 1 or 2 sentences
+on the graph.</p>
+<p><strong>Question 11 [2 points]</strong>
+Suppose I create five logical variables; the first three respresent each of my children
+and the last two represent my wife and I.
+The kids variables are set to <span class="math inline">\({\tt TRUE}\)</span> if and only they had vegetables at lunch.
+My wife and I are set to <span class="math inline">\({\tt TRUE}\)</span> if and only if we are exhausted.
+So in the example below, my wife is exhausted and I’m ok; two of our kids had vegetables.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>c1 &lt;-<span class="st"> </span><span class="ot">TRUE</span>; c2 &lt;-<span class="st"> </span><span class="ot">FALSE</span>; c3 &lt;-<span class="st"> </span><span class="ot">TRUE</span>; wife &lt;-<span class="st"> </span><span class="ot">FALSE</span>; me &lt;-<span class="st"> </span><span class="ot">TRUE</span></span></code></pre></div>
+<p>I want to write some R code to evaluate whether we will order pizza or not.</p>
+<p>To give you an example, suppose I don’t care if my kids had vegetables or not;
+we order pizza if both my wife and I are exhausted. My logical expression would be:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>(wife <span class="op">&amp;</span><span class="st"> </span>me)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="co">## [1] FALSE</span></span></code></pre></div>
+<p><strong>Question 12 [4 points]</strong>
+Building on Question 11, write a logical expression using <span class="math inline">\({\tt AND~\&amp;}\)</span>, <span class="math inline">\({\tt OR |}\)</span> and <span class="math inline">\({\tt NOT !}\)</span> operators on these five variables. Here the logical expression should be <span class="math inline">\({\tt TRUE}\)</span> only when all of my children had vegetables at lunch and if both my wife and I are exhausted. Otherwise it is <span class="math inline">\({\tt FALSE}\)</span> and we make salad.</p>
+<p>Good luck!</p>
 
 
     </article>

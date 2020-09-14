@@ -6,7 +6,7 @@ bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 ---
 
-[Lecture 03 at Youtube: Breast Cancer Transcriptomes](https://youtu.be/ZF-ZZhR0UKE)
+[Lecture 03 at Youtube: Breast Cancer Transcriptomes](https://youtu.be/8iLoIZ0tF4s)
  
 
 

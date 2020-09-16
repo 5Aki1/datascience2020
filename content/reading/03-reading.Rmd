@@ -10,7 +10,7 @@ csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 
 # Required
 
-- [Chapter 3 R for Data Science: Introduction](https://r4ds.had.co.nz/explore-intro.html)
+- [Chapter 3 R for Data Science: Introduction](https://r4ds.had.co.nz/data-visualisation.html)
 
 - [Sequencing by Synthesis](https://www.youtube.com/watch?v=CZeN-IgjYCo)
 

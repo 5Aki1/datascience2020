@@ -100,17 +100,18 @@ Create a barplot (like Slide 28 of L03) that explores the relationship between  
 on the graph.
 
 __Question 11 [2 points]__
-Suppose I create five logical variables; the first three respresent each of my children
+Suppose I create five logical variables; the first three represent each of my children
 and the last two represent my wife and I.
 The kids variables are set to ${\tt TRUE}$ if and only they had vegetables at lunch.
 My wife and I are set to ${\tt TRUE}$ if and only if we are exhausted.
 So in the example below, my wife is exhausted and I'm ok; two of our kids had vegetables.
 
 ```{r echo=TRUE, fig.align='left', collapse=TRUE, class.source="watch-out"}
-c1 <- TRUE; c2 <- FALSE; c3 <- TRUE; wife <- FALSE; me <- TRUE
+c1 <- TRUE; c2 <- FALSE; c3 <- TRUE; wife <- TRUE; me <- FALSE
 ```
 
-I want to write some R code to evaluate whether we will order pizza or not.
+I would like you to write some R code to evaluate whether we will order pizza or not.
+_The condition is that at least one of my children at vegetables at lunch._
 
 To give you an example, suppose I don't care if my kids had vegetables or not; 
 we order pizza if both my wife and I are exhausted. My logical expression would be:

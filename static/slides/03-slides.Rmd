@@ -232,7 +232,7 @@ ggplot(data = small_brca) +
 ```
 
 - ERBB2 is the official gene name for HER2.
-- The ${\tt ggplot()}$ function is where it all begins. Here we specify the tibble that stores the data we are going to us.
+- The ${\tt ggplot()}$ function is where it all begins. Here we specify the tibble that stores the data we are going to use.
 - We add layers to the plot using the + operator. A ${\tt geom}$ species the type of geometric object. - Here we specify points for a scatterplot.
 
 ## Scatterplot
@@ -374,7 +374,7 @@ ggplot(data = small_brca) +
 
 - What limitations would transcriptome based studies face?
 - What privacy issues might arise in -omic studies? Specifically, consider a transcriptome based study versus a genomic DNA-based study.
-- Most, if not all, Human tissue is comprised of many different cell types. For example, a breast tumor will include epithelial cells, fibroblasts, immune cells of different kinds, adipocytes, and cells associated with the vasculature and lymphatics system. What kinds of affects could this happen on transcriptiona profiles like those found in TCGA?
+- Most, if not all, Human tissue is comprised of many different cell types. For example, a breast tumor will include epithelial cells, fibroblasts, immune cells of different kinds, adipocytes, and cells associated with the vasculature and lymphatics system. What kinds of affects could this happen on transcriptional profiles like those found in TCGA?
 - Challenge: Find where ERBB2 and GRB7 lie on the human genome? What database would you used? What other genes are in that region?
 - What do lymph nodes do? Why might they be an important indicator in BC progression?
 

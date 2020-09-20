@@ -248,13 +248,14 @@ Interpret this graph in 1 or 2 sentences.</p>
 Create a barplot (like Slide 28 of L03) that explores the relationship between <span class="math inline">\({\tt ajcc\_pathologic\_tumor\_stage}\)</span> and <span class="math inline">\({\tt er\_status\_by\_ihc}\)</span>. Comment (interpret) in 1 or 2 sentences
 on the graph.</p>
 <p><strong>Question 11 [2 points]</strong>
-Suppose I create five logical variables; the first three respresent each of my children
+Suppose I create five logical variables; the first three represent each of my children
 and the last two represent my wife and I.
 The kids variables are set to <span class="math inline">\({\tt TRUE}\)</span> if and only they had vegetables at lunch.
 My wife and I are set to <span class="math inline">\({\tt TRUE}\)</span> if and only if we are exhausted.
 So in the example below, my wife is exhausted and I’m ok; two of our kids had vegetables.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>c1 &lt;-<span class="st"> </span><span class="ot">TRUE</span>; c2 &lt;-<span class="st"> </span><span class="ot">FALSE</span>; c3 &lt;-<span class="st"> </span><span class="ot">TRUE</span>; wife &lt;-<span class="st"> </span><span class="ot">FALSE</span>; me &lt;-<span class="st"> </span><span class="ot">TRUE</span></span></code></pre></div>
-<p>I want to write some R code to evaluate whether we will order pizza or not.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>c1 &lt;-<span class="st"> </span><span class="ot">TRUE</span>; c2 &lt;-<span class="st"> </span><span class="ot">FALSE</span>; c3 &lt;-<span class="st"> </span><span class="ot">TRUE</span>; wife &lt;-<span class="st"> </span><span class="ot">TRUE</span>; me &lt;-<span class="st"> </span><span class="ot">FALSE</span></span></code></pre></div>
+<p>I would like you to write some R code to evaluate whether we will order pizza or not.
+<em>The condition is that at least one of my children at vegetables at lunch.</em></p>
 <p>To give you an example, suppose I don’t care if my kids had vegetables or not;
 we order pizza if both my wife and I are exhausted. My logical expression would be:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>(wife <span class="op">&amp;</span><span class="st"> </span>me)</span>

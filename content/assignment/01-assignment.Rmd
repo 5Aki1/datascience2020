@@ -111,7 +111,7 @@ c1 <- TRUE; c2 <- FALSE; c3 <- TRUE; wife <- TRUE; me <- FALSE
 ```
 
 I would like you to write some R code to evaluate whether we will order pizza or not.
-_The condition is that at least one of my children at vegetables at lunch._
+_The condition is that at least one of my children ate vegetables at lunch._
 
 To give you an example, suppose I don't care if my kids had vegetables or not; 
 we order pizza if both my wife and I are exhausted. My logical expression would be:

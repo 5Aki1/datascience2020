@@ -1,0 +1,27 @@
+---
+title: "How to wrangle with marine microbes"
+date: "2020-09-08"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+
+# Required
+
+- [Chapters 10-11](https://r4ds.had.co.nz/wrangle-intro.html): R for Data Sience (they are short 
+and most of the material is already familiar to you)
+
+# Recommended Reading
+
+- [Sunagawa et al. (2015) Structure and function of the global ocean microbiome](https://science.sciencemag.org/content/348/6237/1261359.long)
+
+You will need to be logged into the Concordia VPN to access this paper.
+
+# Action items  
+
+
+- Get ready for the midterm.
+
+
+

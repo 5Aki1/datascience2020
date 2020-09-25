@@ -56,6 +56,17 @@ Action items  If you haven’t doing the reading, please do so and address the a
     </item>
     
     <item>
+      <title>How to wrange with marine microbes</title>
+      <link>/class/08-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/08-class/</guid>
+      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Midterm midterm midterm  Points of Reflection  What advantages are there for data scientists if there is a single data structure like the \({\tt tibble}\)?
+ Do a bit of archaelogy and figure out what this ancient \({\tt data.frame}\) is.
+ Would science be better served if there were more standardized ways of making data and metadata available?</description>
+    </item>
+    
+    <item>
       <title>Modern Computing Paradigms</title>
       <link>/class/02-class/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>

@@ -1,0 +1,30 @@
+---
+title: "How to wrange with marine microbes"
+date: "2020-07-20"
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+---
+
+# Slides
+
+- [View lectures slide in your browser (html)](/slides/08-slides.html)
+
+
+# Action Items
+
+- Midterm midterm midterm
+
+
+
+
+## Points of Reflection
+
+- What advantages are there for data scientists if there is a single data structure like the ${\tt tibble}$?
+
+- Do a bit of archaelogy and figure out what this ancient ${\tt data.frame}$ is.
+
+- Would science be better served if there were more standardized ways of making data and metadata available? 
+
+

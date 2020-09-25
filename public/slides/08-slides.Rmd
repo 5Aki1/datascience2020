@@ -1,0 +1,75 @@
+---
+title: "How to wrangle with marine microbes"
+author: "M Hallett"
+date: "21/07/2020"
+header-includes:
+   - \usepackage{bbm}
+output: 
+  revealjs::revealjs_presentation:
+    css: solar.css
+    incremental: false
+    theme: black
+    highlight: kate
+    transition: convex
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    self_contained: false
+    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+      chalkboard: 
+        theme: chalkboard
+        toggleNotesButton: true
+      menu:
+        numbers: true
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Plan for Today
+
+- Check out my Youtube channel for classic [Survivorman](https://www.youtube.com/watch?v=yNxro4Nn_Ok).
+
+- Today I will be stranded on a desert island in the fierce conditions of the south pacific ocean.
+
+- With nothing but my Arc'teryx jacket and a single RSTudio Cloud license;
+
+- I will seek to survive the incredible sunny days, really salty water, and relentless sand 
+
+- ... suriving on nothing more than microbes that I wrangled into my ${\tt tibble}$.
+
+- It might seem easy but a week without that special tea from Indonesia of questionable legality  which my grad student keeps giving me, and you are dead.
+
+## Our attempt to harvest Tara Oceans data 
+
+- ... and wrangle it into our RStudio session.
+
+- [Tara Oceans](https://oceans.taraexpeditions.org/en/)  
+
+- [Sunagawa et al. (2015) Structure and function of the global ocean microbiome. Science](https://science.sciencemag.org/content/348/6237/1261359.long)
+
+- This one is where we will start our survival expedition [Sunagawa et al. (2015) Supplemental Data](http://ocean-microbiome.embl.de/companion.html)
+
+
+## Map of where we are
+
+
+<figure class="image">
+<p float="center">
+  <img src="images/explore_cycle.png" width="600"/> 
+</p>
+<figcaption><small> From R for Datas Sience, Chapter 6.
+</small> </figcaption>
+</figure>
+
+
+## BIOL480 
+
+&copy; M Hallett, 2020 Concordia University
+
+![Computational Biology Concordia](images/apple-touch-icon-114x114.png)
+
+

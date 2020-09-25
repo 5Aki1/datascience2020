@@ -86,6 +86,25 @@ Action items  If you haven’t doing the reading, please do so and address the a
     </item>
     
     <item>
+      <title>How to wrangle with marine microbes</title>
+      <link>/reading/08-reading/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/08-reading/</guid>
+      <description>  Required  Chapters 10-11: R for Data Sience (they are short and most of the material is already familiar to you)  Recommended Reading  Sunagawa et al. (2015) Structure and function of the global ocean microbiome  You will need to be logged into the Concordia VPN to access this paper.
+Action items  Get ready for the midterm.  </description>
+    </item>
+    
+    <item>
+      <title>How to wrangle with marine microbes</title>
+      <link>/video/08-video/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/video/08-video/</guid>
+      <description>Lecture 08 at Youtube</description>
+    </item>
+    
+    <item>
       <title>Introduction and orientation</title>
       <link>/reading/00-reading/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
@@ -224,6 +243,17 @@ Lecture 02 Part 2 at Youtube (RStudio Cloud)</description>
       <guid>/class/06-class/</guid>
       <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Today’s material is the final material included in Midterm #1.  Challenge Points of Reflection  Many of us are familiar with representing data in spreadsheets (eg Excel of Google Sheets). Describe the fundamental differences between the two dimensional table of spreadsheets and the tibble.
  With respect to the discussion at the beginning of Chapter 6 in the textbook, what are some fundamental differences between an academic course environment where you are given a dataset and specific questions to complete on an assignment versus data science in research or idustrial settings?</description>
+    </item>
+    
+    <item>
+      <title>How to wrange with marine microbes</title>
+      <link>/class/08-class/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/08-class/</guid>
+      <description>Contents  Slides Action Items   Slides  View lectures slide in your browser (html)  Action Items  Midterm midterm midterm  Points of Reflection  What advantages are there for data scientists if there is a single data structure like the \({\tt tibble}\)?
+ Do a bit of archaelogy and figure out what this ancient \({\tt data.frame}\) is.
+ Would science be better served if there were more standardized ways of making data and metadata available?</description>
     </item>
     
     <item>

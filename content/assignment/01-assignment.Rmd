@@ -64,7 +64,7 @@ __For Questions 7-10 below.__ Put a comment in your file that states what questi
 
 __Question 7 [5 points]__
 
-Recall from the lecture that ${\tt HER2}$ is an important protein in some subtypes of breast cancer, and remmeber that ${\tt ERBB2}$ is the official name for ${\tt HER2}$.
+Recall from the lecture that ${\tt HER2}$ is an important protein in some subtypes of breast cancer, and remember that ${\tt ERBB2}$ is the official name for ${\tt HER2}$.
 
 The variable ${\tt ERBB2}$ in our tibble corresponds to estimates of the number of transcripts present in each sample (row). This is obtained using RNA-seq technologies as discussed in the lecture. 
 Clinically, ${\tt HER2}$ is not measured using transcriptomics. Typically the

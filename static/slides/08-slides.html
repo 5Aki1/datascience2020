@@ -469,13 +469,21 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="plan-for-today" class="slide level2">
 <h2>Plan for Today</h2>
 <ul>
+<li><p>Check out Les Stroud’s Youtube channel for classic <a href="https://www.youtube.com/watch?v=yNxro4Nn_Ok">Survivorman</a>.</p></li>
 <li><p>Today I will be stranded on a desert island in the fierce conditions of the south pacific ocean.</p></li>
-<li><p>With nothing but my Arc’teryx jacket and a single <span class="math inline">\({\tt tibble}\)</span>;</p></li>
+<li><p>With nothing but my Arc’teryx jacket and a single RSTudio Cloud license;</p></li>
 <li><p>I will seek to survive the incredible sunny days, really salty water, and relentless sand</p></li>
 <li><p>… suriving on nothing more than microbes that I wrangled into my <span class="math inline">\({\tt tibble}\)</span>.</p></li>
+<li><p>It might seem easy but a week without that special tea from Indonesia of questionable legality which my grad student keeps giving me, and you are dead.</p></li>
+</ul>
+</section>
+<section id="our-attempt-to-harvest-tara-oceans-data" class="slide level2">
+<h2>Our attempt to harvest Tara Oceans data</h2>
+<ul>
+<li><p>… and wrangle it into our RStudio session.</p></li>
 <li><p><a href="https://oceans.taraexpeditions.org/en/">Tara Oceans</a></p></li>
 <li><p><a href="https://science.sciencemag.org/content/348/6237/1261359.long">Sunagawa et al. (2015) Structure and function of the global ocean microbiome. Science</a></p></li>
-<li><p>This one is where we will start our survival expedition <a href="http://ocean-microbiome.embl.de/companion.html">Sunagawa et al. (2015) Supplemental Data</a></p></li>
+<li><p>We will start our survival expedition here <a href="http://ocean-microbiome.embl.de/companion.html">Sunagawa et al. (2015) Supplemental Data</a></p></li>
 </ul>
 </section>
 <section id="map-of-where-we-are" class="slide level2">
@@ -489,8 +497,68 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </figcaption>
 </figure>
 </section>
-<section id="biol480" class="slide level2">
-<h2>BIOL480</h2>
+<section id="survivormans-goals" class="slide level2">
+<h2>Survivorman’s goals</h2>
+<ul>
+<li><p>A bit about metagenomics</p></li>
+<li><p>3 zones of assessment for wrangling wild data</p></li>
+<li><p>We will also learn a little bit of Unix.</p></li>
+<li><p>Get (a bit of) the data from Tara Oceans into a tibble.</p></li>
+</ul>
+</section>
+<section id="what-is-metagenomics" class="slide level2">
+<h2>What is metagenomics?</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=gWzUWa7-UWA">Intro. to Metagenomics</a>: more focus on human microbiomes whereas we are looking at marine microbiomes.</p></li>
+<li><p>Other links to material for metagenomics computational biology. This sort of analysis comes later.</p></li>
+<li><p>Today we are just focused on wrangling a metagenomics dataset into R.</p></li>
+</ul>
+</section>
+<section id="what-is-metagenomics-1" class="slide level2">
+<h2>What is metagenomics?</h2>
+<ul>
+<li>Sampling the <em>microbiome</em> of a site.
+<ul>
+<li>human: gut, mouth, etc.</li>
+<li>soil</li>
+<li>water: ocean, lakes, …</li>
+</ul></li>
+<li>What is a microbiome?
+<ul>
+<li>The collection of endogenous viruses, Bacteria, Archae, and single-celled Eukaryota living in a space or environment.</li>
+<li>They can be living in commensal, pathogenic or symbiotic relationsips with each other and their environment (host).</li>
+</ul></li>
+<li>What are the fundamental questions?
+<ul>
+<li>What taxa are present?</li>
+<li>What is the frequency of each taxa?</li>
+<li>What is the state of each organism (eg measured through transcriptomics)?</li>
+<li>What does each taxa contribute to the community or environment?
+<ul>
+<li>For example, a sample may have a lot of cyanobacteria because…</li>
+<li>For example, a sample may have a lot of Vibrio spp because …</li>
+<li>For example, a smaple may have a lot of protists because …</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="tara-oceans-project" class="slide level2">
+<h2>Tara Oceans Project</h2>
+<ul>
+<li><p>Sample is essentially an Eppendorf of sea water with many metaparameters describing the envrionment.</p>
+<ul>
+<li>lattitude and longitutde, date, time</li>
+<li>from soil bed, 1 meter above, near sea surface etc.</li>
+<li>depth of sample, temperature of water</li>
+<li>salinity, nitrogen, phosphate and other chemical parameters of water</li>
+<li>method used, person who collected it, processing time, kit numbers etc</li>
+</ul></li>
+<li><p>All genomic DNA (gDNA) is extracted from the sample</p></li>
+<li><p>… and prepared for sequencing (see slides and video now)</p></li>
+</ul>
+</section>
+<section id="biol-480-on-location" class="slide level2">
+<h2>BIOL 480 on location</h2>
 <p>© M Hallett, 2020 Concordia University</p>
 <figure>
 <img data-src="images/apple-touch-icon-114x114.png" alt="" /><figcaption>Computational Biology Concordia</figcaption>

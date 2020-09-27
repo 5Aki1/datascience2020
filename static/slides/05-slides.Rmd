@@ -231,14 +231,14 @@ unique(tumor_brca$ajcc_pathologic_tumor_stage)
 
 ```{r echo=TRUE, fig.align='left', collapse=TRUE, class.source="watch-out"}
 sorted_tnm_tumor_brca <- arrange(tnm_tumor_brca, ajcc_pathologic_tumor_stage, death_days_to)
-head(sorted_tnm_tumor_brca[, c( "ajcc_pathologic_tumor_stage", "vital_status", "death_days_to")])
+head(sorted_tnm_tumor_brca)
 ```
 
 ## Arranging the observations by TNM and survival time
 
 
 ```{r echo=TRUE, fig.align='left', collapse=TRUE, class.source="watch-out"}
-tail(sorted_tnm_tumor_brca[, c( "ajcc_pathologic_tumor_stage", "vital_status", "death_days_to")])
+tail(sorted_tnm_tumor_brca)
 ```
 
 - What happened here?
@@ -278,7 +278,7 @@ tail(sorted_tnm_tumor_brca[, c( "ajcc_pathologic_tumor_stage", "vital_status", "
 
 ```{r echo=TRUE, fig.align='left', collapse=TRUE, class.source="watch-out"}
 final_brca <- arrange(sorted_tnm_tumor_brca, ajcc_pathologic_tumor_stage, death_days_to)
-final_brca[1058:1068, c( "ajcc_pathologic_tumor_stage", "vital_status", "death_days_to")]
+final_brca[1058:1068, c( "ajcc_pathologic_tumor_stage",  "death_days_to")]
 ```
 
 ## ???

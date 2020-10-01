@@ -809,29 +809,67 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li><p>Our goal here is to sort first by TNM stage, and then according to how many days they survived since diagnosis.</p></li>
 </ul>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a>sorted_tnm_tumor_brca &lt;-<span class="st"> </span><span class="kw">arrange</span>(tnm_tumor_brca, ajcc_pathologic_tumor_stage, death_days_to)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true"></a><span class="kw">head</span>(sorted_tnm_tumor_brca[, <span class="kw">c</span>( <span class="st">&quot;ajcc_pathologic_tumor_stage&quot;</span>, <span class="st">&quot;vital_status&quot;</span>, <span class="st">&quot;death_days_to&quot;</span>)])</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true"></a><span class="co">## # A tibble: 6 x 3</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true"></a><span class="co">##   ajcc_pathologic_tumor_stage vital_status death_days_to   </span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a><span class="co">##   &lt;chr&gt;                       &lt;chr&gt;        &lt;chr&gt;           </span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true"></a><span class="co">## 1 Stage I                     Alive        [Not Applicable]</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true"></a><span class="co">## 2 Stage I                     Alive        [Not Applicable]</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true"></a><span class="co">## 3 Stage I                     Alive        [Not Applicable]</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true"></a><span class="co">## 4 Stage I                     Alive        [Not Applicable]</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true"></a><span class="co">## 5 Stage I                     Alive        [Not Applicable]</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true"></a><span class="co">## 6 Stage I                     Alive        [Not Applicable]</span></span></code></pre></div>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true"></a><span class="kw">head</span>(sorted_tnm_tumor_brca)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true"></a><span class="co">## # A tibble: 6 x 79</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true"></a><span class="co">##   id    tss   participant barcode bcr_patient_uuid form_completion…</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a><span class="co">##   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;            &lt;chr&gt;           </span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true"></a><span class="co">## 1 TCGA… A1    A0SB        TCGA-A… 0045349c-69d9-4… 2011-6-30       </span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true"></a><span class="co">## 2 TCGA… A8    A08A        TCGA-A… 7fe4670d-4626-4… 2011-5-27       </span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true"></a><span class="co">## 3 TCGA… E2    A156        TCGA-E… f05d314c-5ec5-4… 2011-4-7        </span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true"></a><span class="co">## 4 TCGA… A8    A095        TCGA-A… 29df128d-ace2-4… 2011-5-27       </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true"></a><span class="co">## 5 TCGA… AR    A255        TCGA-A… e8f3cc64-5e15-4… 2011-8-31       </span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true"></a><span class="co">## 6 TCGA… AR    A24S        TCGA-A… 074e8b06-3929-4… 2011-8-30       </span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true"></a><span class="co">## # … with 73 more variables: birth_days_to &lt;chr&gt;, gender &lt;chr&gt;,</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true"></a><span class="co">## #   menopause_status &lt;chr&gt;, race &lt;chr&gt;, ethnicity &lt;chr&gt;, tumor_status &lt;chr&gt;,</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true"></a><span class="co">## #   vital_status &lt;chr&gt;, death_days_to &lt;chr&gt;, histologic_diagnosis_other &lt;chr&gt;,</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true"></a><span class="co">## #   initial_pathologic_dx_year &lt;chr&gt;, age_at_diagnosis &lt;chr&gt;,</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true"></a><span class="co">## #   micromet_detection_by_ihc &lt;chr&gt;, lymph_nodes_examined_count &lt;chr&gt;,</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true"></a><span class="co">## #   ajcc_pathologic_tumor_stage &lt;chr&gt;, er_status_by_ihc &lt;chr&gt;,</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true"></a><span class="co">## #   er_status_ihc_Percent_Positive &lt;chr&gt;, pr_status_by_ihc &lt;chr&gt;,</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true"></a><span class="co">## #   pr_status_ihc_percent_positive &lt;chr&gt;, her2_fish_status &lt;chr&gt;,</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true"></a><span class="co">## #   her2_copy_number &lt;chr&gt;, histological_type &lt;chr&gt;,</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true"></a><span class="co">## #   metastatic_tumor_indicator &lt;chr&gt;, tumor &lt;lgl&gt;, ANLN &lt;dbl&gt;, FOXC1 &lt;dbl&gt;,</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true"></a><span class="co">## #   CDH3 &lt;dbl&gt;, FGFR4 &lt;dbl&gt;, UBE2T &lt;dbl&gt;, NDC80 &lt;dbl&gt;, PGR &lt;dbl&gt;, BIRC5 &lt;dbl&gt;,</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true"></a><span class="co">## #   ORC6 &lt;dbl&gt;, ESR1 &lt;dbl&gt;, PHGDH &lt;dbl&gt;, PTTG1 &lt;dbl&gt;, MELK &lt;dbl&gt;, NAT1 &lt;dbl&gt;,</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true"></a><span class="co">## #   CXXC5 &lt;dbl&gt;, BCL2 &lt;dbl&gt;, RRM2 &lt;dbl&gt;, GPR160 &lt;dbl&gt;, EXO1 &lt;dbl&gt;, UBE2C &lt;dbl&gt;,</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true"></a><span class="co">## #   TYMS &lt;dbl&gt;, KRT5 &lt;dbl&gt;, KRT14 &lt;dbl&gt;, MAPT &lt;dbl&gt;, CDC6 &lt;dbl&gt;, MMP11 &lt;dbl&gt;,</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true"></a><span class="co">## #   MYBL2 &lt;dbl&gt;, SFRP1 &lt;dbl&gt;, CCNE1 &lt;dbl&gt;, BLVRA &lt;dbl&gt;, BAG1 &lt;dbl&gt;, MLPH &lt;dbl&gt;,</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true"></a><span class="co">## #   CDC20 &lt;dbl&gt;, CENPF &lt;dbl&gt;, MIA &lt;dbl&gt;, KRT17 &lt;dbl&gt;, FOXA1 &lt;dbl&gt;,</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true"></a><span class="co">## #   ACTR3B &lt;dbl&gt;, CCNB1 &lt;dbl&gt;, MDM2 &lt;dbl&gt;, MYC &lt;dbl&gt;, CEP55 &lt;dbl&gt;,</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true"></a><span class="co">## #   SLC39A6 &lt;dbl&gt;, ERBB2 &lt;dbl&gt;, GRB7 &lt;dbl&gt;, KIF2C &lt;dbl&gt;, NUF2 &lt;dbl&gt;,</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true"></a><span class="co">## #   EGFR &lt;dbl&gt;, MKI67 &lt;dbl&gt;, TMEM45B &lt;dbl&gt;</span></span></code></pre></div>
 </section>
 <section id="arranging-the-observations-by-tnm-and-survival-time" class="slide level2">
 <h2>Arranging the observations by TNM and survival time</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a><span class="kw">tail</span>(sorted_tnm_tumor_brca[, <span class="kw">c</span>( <span class="st">&quot;ajcc_pathologic_tumor_stage&quot;</span>, <span class="st">&quot;vital_status&quot;</span>, <span class="st">&quot;death_days_to&quot;</span>)])</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true"></a><span class="co">## # A tibble: 6 x 3</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true"></a><span class="co">##   ajcc_pathologic_tumor_stage vital_status death_days_to</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true"></a><span class="co">##   &lt;chr&gt;                       &lt;chr&gt;        &lt;chr&gt;        </span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true"></a><span class="co">## 1 Stage IV                    Dead         1365         </span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true"></a><span class="co">## 2 Stage IV                    Dead         255          </span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true"></a><span class="co">## 3 Stage IV                    Dead         362          </span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true"></a><span class="co">## 4 Stage IV                    Dead         3941         </span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true"></a><span class="co">## 5 Stage IV                    Dead         612          </span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true"></a><span class="co">## 6 Stage IV                    Dead         825</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a><span class="kw">tail</span>(sorted_tnm_tumor_brca)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true"></a><span class="co">## # A tibble: 6 x 79</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true"></a><span class="co">##   id    tss   participant barcode bcr_patient_uuid form_completion…</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true"></a><span class="co">##   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;            &lt;chr&gt;           </span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true"></a><span class="co">## 1 TCGA… A2    A0SW        TCGA-A… 991e1427-3c01-4… 2010-11-8       </span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true"></a><span class="co">## 2 TCGA… A2    A0T2        TCGA-A… 128d198e-9b22-4… 2010-11-12      </span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true"></a><span class="co">## 3 TCGA… B6    A0I9        TCGA-B… 44954053-0b93-4… 2010-11-2       </span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true"></a><span class="co">## 4 TCGA… B6    A0IB        TCGA-B… 157ec9e0-ca6e-4… 2010-11-2       </span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true"></a><span class="co">## 5 TCGA… BH    A18J        TCGA-B… cc074b7f-d3b2-4… 2011-6-8        </span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true"></a><span class="co">## 6 TCGA… A2    A0SV        TCGA-A… ad01259b-d858-4… 2010-11-15      </span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true"></a><span class="co">## # … with 73 more variables: birth_days_to &lt;chr&gt;, gender &lt;chr&gt;,</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true"></a><span class="co">## #   menopause_status &lt;chr&gt;, race &lt;chr&gt;, ethnicity &lt;chr&gt;, tumor_status &lt;chr&gt;,</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true"></a><span class="co">## #   vital_status &lt;chr&gt;, death_days_to &lt;chr&gt;, histologic_diagnosis_other &lt;chr&gt;,</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true"></a><span class="co">## #   initial_pathologic_dx_year &lt;chr&gt;, age_at_diagnosis &lt;chr&gt;,</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true"></a><span class="co">## #   micromet_detection_by_ihc &lt;chr&gt;, lymph_nodes_examined_count &lt;chr&gt;,</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true"></a><span class="co">## #   ajcc_pathologic_tumor_stage &lt;chr&gt;, er_status_by_ihc &lt;chr&gt;,</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true"></a><span class="co">## #   er_status_ihc_Percent_Positive &lt;chr&gt;, pr_status_by_ihc &lt;chr&gt;,</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true"></a><span class="co">## #   pr_status_ihc_percent_positive &lt;chr&gt;, her2_fish_status &lt;chr&gt;,</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true"></a><span class="co">## #   her2_copy_number &lt;chr&gt;, histological_type &lt;chr&gt;,</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true"></a><span class="co">## #   metastatic_tumor_indicator &lt;chr&gt;, tumor &lt;lgl&gt;, ANLN &lt;dbl&gt;, FOXC1 &lt;dbl&gt;,</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true"></a><span class="co">## #   CDH3 &lt;dbl&gt;, FGFR4 &lt;dbl&gt;, UBE2T &lt;dbl&gt;, NDC80 &lt;dbl&gt;, PGR &lt;dbl&gt;, BIRC5 &lt;dbl&gt;,</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true"></a><span class="co">## #   ORC6 &lt;dbl&gt;, ESR1 &lt;dbl&gt;, PHGDH &lt;dbl&gt;, PTTG1 &lt;dbl&gt;, MELK &lt;dbl&gt;, NAT1 &lt;dbl&gt;,</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true"></a><span class="co">## #   CXXC5 &lt;dbl&gt;, BCL2 &lt;dbl&gt;, RRM2 &lt;dbl&gt;, GPR160 &lt;dbl&gt;, EXO1 &lt;dbl&gt;, UBE2C &lt;dbl&gt;,</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true"></a><span class="co">## #   TYMS &lt;dbl&gt;, KRT5 &lt;dbl&gt;, KRT14 &lt;dbl&gt;, MAPT &lt;dbl&gt;, CDC6 &lt;dbl&gt;, MMP11 &lt;dbl&gt;,</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true"></a><span class="co">## #   MYBL2 &lt;dbl&gt;, SFRP1 &lt;dbl&gt;, CCNE1 &lt;dbl&gt;, BLVRA &lt;dbl&gt;, BAG1 &lt;dbl&gt;, MLPH &lt;dbl&gt;,</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true"></a><span class="co">## #   CDC20 &lt;dbl&gt;, CENPF &lt;dbl&gt;, MIA &lt;dbl&gt;, KRT17 &lt;dbl&gt;, FOXA1 &lt;dbl&gt;,</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true"></a><span class="co">## #   ACTR3B &lt;dbl&gt;, CCNB1 &lt;dbl&gt;, MDM2 &lt;dbl&gt;, MYC &lt;dbl&gt;, CEP55 &lt;dbl&gt;,</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true"></a><span class="co">## #   SLC39A6 &lt;dbl&gt;, ERBB2 &lt;dbl&gt;, GRB7 &lt;dbl&gt;, KIF2C &lt;dbl&gt;, NUF2 &lt;dbl&gt;,</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true"></a><span class="co">## #   EGFR &lt;dbl&gt;, MKI67 &lt;dbl&gt;, TMEM45B &lt;dbl&gt;</span></span></code></pre></div>
 <ul>
 <li><p>What happened here?</p></li>
 <li><p>Hint: What is the type of <span class="math inline">\({\tt deaths\_days\_to}\)</span>?</p></li>
@@ -879,21 +917,21 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="converting-the-type-of-a-variable-column-2" class="slide level2">
 <h2>Converting the type of a variable (column)</h2>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r watch-out"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true"></a>final_brca &lt;-<span class="st"> </span><span class="kw">arrange</span>(sorted_tnm_tumor_brca, ajcc_pathologic_tumor_stage, death_days_to)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true"></a>final_brca[<span class="dv">1058</span><span class="op">:</span><span class="dv">1068</span>, <span class="kw">c</span>( <span class="st">&quot;ajcc_pathologic_tumor_stage&quot;</span>, <span class="st">&quot;vital_status&quot;</span>, <span class="st">&quot;death_days_to&quot;</span>)]</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true"></a><span class="co">## # A tibble: 11 x 3</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true"></a><span class="co">##    ajcc_pathologic_tumor_stage vital_status death_days_to</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true"></a><span class="co">##    &lt;chr&gt;                       &lt;chr&gt;                &lt;dbl&gt;</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true"></a><span class="co">##  1 Stage IIIC                  Alive                   NA</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true"></a><span class="co">##  2 Stage IV                    Dead                   116</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true"></a><span class="co">##  3 Stage IV                    Dead                   255</span></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true"></a><span class="co">##  4 Stage IV                    Dead                   362</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true"></a><span class="co">##  5 Stage IV                    Dead                   612</span></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true"></a><span class="co">##  6 Stage IV                    Dead                   825</span></span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true"></a><span class="co">##  7 Stage IV                    Dead                  1034</span></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true"></a><span class="co">##  8 Stage IV                    Dead                  1127</span></span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true"></a><span class="co">##  9 Stage IV                    Dead                  1365</span></span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true"></a><span class="co">## 10 Stage IV                    Dead                  3941</span></span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true"></a><span class="co">## 11 Stage IV                    Alive                   NA</span></span></code></pre></div>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true"></a>final_brca[<span class="dv">1058</span><span class="op">:</span><span class="dv">1068</span>, <span class="kw">c</span>( <span class="st">&quot;ajcc_pathologic_tumor_stage&quot;</span>,  <span class="st">&quot;death_days_to&quot;</span>)]</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true"></a><span class="co">## # A tibble: 11 x 2</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true"></a><span class="co">##    ajcc_pathologic_tumor_stage death_days_to</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true"></a><span class="co">##    &lt;chr&gt;                               &lt;dbl&gt;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true"></a><span class="co">##  1 Stage IIIC                             NA</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true"></a><span class="co">##  2 Stage IV                              116</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true"></a><span class="co">##  3 Stage IV                              255</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true"></a><span class="co">##  4 Stage IV                              362</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true"></a><span class="co">##  5 Stage IV                              612</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true"></a><span class="co">##  6 Stage IV                              825</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true"></a><span class="co">##  7 Stage IV                             1034</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true"></a><span class="co">##  8 Stage IV                             1127</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true"></a><span class="co">##  9 Stage IV                             1365</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true"></a><span class="co">## 10 Stage IV                             3941</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true"></a><span class="co">## 11 Stage IV                               NA</span></span></code></pre></div>
 </section>
 <section id="section" class="slide level2">
 <h2>???</h2>

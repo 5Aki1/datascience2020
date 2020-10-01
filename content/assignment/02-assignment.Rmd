@@ -1,0 +1,170 @@
+---
+title: "Assignment 2"
+author: "M Hallett"
+date: "21/07/2020"
+output: 
+  revealjs::revealjs_presentation:
+    css: solar.css
+    incremental: true
+    theme: black
+    highlight: haddock
+    transition: convex
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    self_contained: false
+    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+      chalkboard: 
+        theme: chalkboard
+        toggleNotesButton: true
+      menu:
+        numbers: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(reshape2)
+load("~/data/GDC/TCGA_BRCA/small_brca.Rdata")
+```
+
+Please note that due dates can be found in the [Syllabus](/Syllabus); submission instructions can be found on the [Assignment Instructions](/Assignments) page. In this assignment, you can submit a Google Doc (or other text editor, pictures, etc.) but also your ${\tt R}$ code via Google Drive. 
+Aki will go over the submission process in the lab.
+
+You might consider (but it is not mandatory) using R Markdown to write your answers.
+
+${\bf 50}$ total marks.
+
+__Question 1 [1 points]__ 
+Re-express the following small program using pipes. 
+```{r echo=TRUE, fig.align='center', collapse=TRUE, class.source="watch-out"}
+x<-3; mu<-5; sigma <-7
+nrm <- ( 1 / (sigma * sqrt( 2 * pi ))) * exp( -(1/2) * ( (x - mu)/ sigma )^2)
+```
+
+Hint: 
+```{r echo=TRUE, fig.align='center', collapse=TRUE, class.source="watch-out"}
+p <- c( first = "a", second = "b", third = "c")
+```
+
+_Bonus [1/2 point]_ What is this equation?
+
+__Question 2 [3 points]__ 
+Re-express the following small program using pipes. 
+```{r echo=TRUE, fig.align='center', collapse=TRUE, class.source="watch-out"}
+site <- 15
+gsub(";", "/", paste(paste( paste( "~hallett", paste("raw", "tara", sep = ";"), sep = ";"), 
+      paste("site", site, sep="_"), sep=";"), 
+      "dna_seq.fa", sep=";"))
+```
+
+__Question 3 [6 points]__
+
+3a [1 point] How many black or african women are included in the ${\tt small\_brca}$ dataset?
+
+3b [1 point] How many black or african males?
+
+3c [3 points] Create a histogram of all black or african individuals grouped by age. Each bar in the histogram should have two colours corresponding to male and females. (For example, red might be used for the fraction of women in some age group while blue is used for men in that same age group). Choose the number of bins (or binsize) in a way that makes your plot informative.
+
+3d [1 point] What was the rationale for the number of bins you used?
+
+
+Show code for all parts $3a$ to $3d$.
+
+__Question 4 [7 points]__
+
+4a [2 point] How many participants are there? (Careful: not samples but participants.) Show code.
+
+4b [3 points] List all of the ${\tt participant}$ that have more than one sample. Show code.
+
+4c [2 points] For the participants identfied in 3b, create a scatter plot with the tumor  on the $x$ axis and the normal  on the $y$ axis (as specified by the ${\tt tumor}$ variable in the tibble) with points representing the expression of gene ${\tt ESR1}$.
+
+Show your code for each step.
+
+__Question 5 [7 points]__
+
+Create the following plot using the ${\tt small\_brca}$ tibble.
+
+```{r echo=FALSE, fig.align='center', collapse=TRUE, class.source="watch-out"}
+sb <- small_brca
+sb %>% 
+  select( c(participant, "age_at_diagnosis", tumor, c("ESR1", "BCL2", "ERBB2", "EGFR", "MKI67", "PGR") )) %>%
+  melt(id.vars = c("participant", "age_at_diagnosis", "tumor"), measure.vars =c("ESR1", "BCL2", "ERBB2", "EGFR", "MKI67", "PGR") ) %>%
+  as_tibble -> lava
+lava$age_at_diagnosis <- as.numeric(lava$age_at_diagnosis)
+
+ggplot(data = lava, mapping = aes(x = value, y = age_at_diagnosis, color = variable), size=.1) + 
+  geom_point() +
+  xlab("log expression")+
+  scale_x_continuous(trans='log') 
+```
+
+
+__Question 6 [4 points]__
+
+In the lecture I said that the violin plot has killed the boxplot. __Maya__, your classmate, contradicted me and suggested boxplots are, actually, cool. 
+Well I thought then that the whole class should get another question to explore __Maya's__ suggestion. Let's all thank __Maya__!!
+
+6a [3 points] In one figure (hint: ${\tt ggarrange}$) using the log-transformed expression of ${\tt ESR1}$ create (i) a boxplot, (ii) a violin plot, (iii) a boxplot with beeswarm.
+
+6b [1 point] In your opinion - whatever you think now - which is the nicest?
+
+
+__Question 7 [5 points]__
+
+The variable ${\tt race}$ in ${\tt small\_brca}$ has several different possible values including "WHITE", "ASIAN", "BLACK OR AFRICAN AMERICAN", "AMERICAN INDIAN OR ALASKA NATIVE", "[Not Available]", "[Not Evaluated]", or NA.
+
+It is better to simply use NA instead of"[Not Available]", "[Not Evaluated]", or NA.
+It will simplify your code in downstream analyses.
+
+Write R code to create a new ${\tt race\_modified}$ variable where all samples with  "[Not Available]", "[Not Evaluated]" are changed to NA  (Note: you shouldn't use "NA", but NA. They are not the same)
+
+__Question 8 [5 points]__
+
+Samples may have differences in the distributions of expression across the genes.
+This might be caused by technical noise  because often not all samples are processed at the
+same time or the samples might be prepared slightly differently.
+This difference in distributions can sometimes get in the way of our analysis, especially
+when we are looking at many genes at the same time.
+A common approach that sometimes helps is to _median center_ the expression of each gene. 
+For any gene, the median centering transforms transcript counts $G = (g_1, g_2, \ldots, g_n)$ 
+to $G'= (g'_1, g'_2, \ldots, g'_n)$ where $g'_i = g_i - median(G)$.
+Here $n$ is the number of genes (in our case $n=50$).
+
+Show code to create a new tibble where all expression measurements are median centered.
+
+
+__Question 9 [7 points]__
+
+Different genes have different distributions of expression. 
+We saw evidence of this in Lecture 06 (slide 25) when we created a violin plot across all $50$ of our genes.
+This difference in distributions can also sometimes get in the way of our analysis, especially
+when we are looking at many genes at the same time. 
+Or sometimes we want to only those genes that have large or highly _variable_ expression.
+
+__9a [1 point]:__ Using online resources, define what the _variance_ of a distribution is. Find a function in R to compute the variance.
+
+__9b [4 points]:__ Compute the variance for each of the $50$ genes in our dataset, create
+a tibble with just the ${\tt participant}$ and ${\tt race}$ variables along with  the $50$ genes. Order the columns (variables) of the tibble from most to least variable.
+
+__9c [2 points]:__ Create a violin plot of the $50$ genes ordered from most to least variable.
+
+__Question 10 [5 points]__
+Pick one of the $50$ genes from ${\tt small\_brca}$ uniformly randomly (see the ${\tt runif}$ function). Using the NCBI, provide the following information or note that it is not availalbe:
+
+10a Full name of the gene and the official name according to the HGNC.<br>
+10b First time it was reported in the literature.<br>
+10c Where it is located in the genome.<br>
+10d Its ${\tt gi}$ acccession code or codes (if it has been modified).<br>
+10e The number of exons.<br>
+10f The number of alternative transcripts that have been record. <br>
+10g Its full amino acid sequence. Provide its protein ID.<br>
+10h Its protein structure, if known.<br>
+
+
+
+Good luck!
+
